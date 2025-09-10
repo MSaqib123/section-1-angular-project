@@ -8,4 +8,9 @@
 11. Preparing User Data (To Output Dynamic Content)
     1. adding dummy user file.ts
     2. adding asset folder 
-    
+
+
+12. Storing Data in a Component Class
+    1. using  dummy_user data in     user component with random index
+
+13.
