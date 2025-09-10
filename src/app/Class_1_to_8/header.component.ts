@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   selector: 'app-header',
 
   //======= inline Html =========
-  template: '<h1>Pakistan</h1>',
+  // template: '<h1>Pakistan</h1>',
+  //======= external Html =========
+  templateUrl: './header.component.html',
 })
 export class HeaderComponent {}
