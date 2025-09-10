@@ -1,0 +1,12 @@
+1. Module Introduction
+    // Topics to learn in this section
+2. A New Starting Project & Analyzing The Project Structure
+    // Understanding the Files Structure
+
+3. Understanding Components & How Content Ends Up On The Screen
+    //how anguler works.  how it render the thing to browser
+    //1. app start from  index.html
+    //2. butt index is totaly empty so how 
+    //3. inside the  there is called companonent    app-root   when code reach at this  then angular comes in action
+    //4. he replace this  tage  with actual   component by using angular power
+    //5. during this process  anguler convert  component to render , and add styles to to main page.
