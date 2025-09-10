@@ -5,3 +5,7 @@
 10. Styling & Using Our Next Custom Component
     1. styling user componentn
 
+11. Preparing User Data (To Output Dynamic Content)
+    1. adding dummy user file.ts
+    2. adding asset folder 
+    
