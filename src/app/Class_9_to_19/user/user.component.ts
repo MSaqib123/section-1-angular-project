@@ -18,6 +18,12 @@ export class UserComponent {
   }
 
   onChangeUser() {
-    console.log('Click');
+    // console.log('Click');
+    //===================================
+    // Managing State
+    // NOte In programming, state is just the data (like the customer’s name or order)
+    //===================================
+    const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
+    this.selectUser = DUMMY_USERS[randomIndex];
   }
 }

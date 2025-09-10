@@ -36,7 +36,11 @@
 
 17. Listening to Events with Event Binding
     adding click event on button
+    // click is  event listener
 
-18. 
+18. Managing State & Changing Data
+    2. Mangeing the state    and changing the data
+    
+
 
     
