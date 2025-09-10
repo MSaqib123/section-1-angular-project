@@ -10,3 +10,7 @@
     //3. inside the  there is called companonent    app-root   when code reach at this  then angular comes in action
     //4. he replace this  tage  with actual   component by using angular power
     //5. during this process  anguler convert  component to render , and add styles to to main page.
+
+
+4. Creating a First Custom Component
+    createing the header component of   Dummy project
