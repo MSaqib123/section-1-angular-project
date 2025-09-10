@@ -14,3 +14,26 @@
 
 4. Creating a First Custom Component
     createing the header component of   Dummy project
+
+
+6. Configuring the Custom Component
+    // setting Component decorator @Component
+    // @Component is used to build component
+    // adding   HTML Template  inline and external
+
+
+7. Using the Custom Component
+    //using the Custome @Component  in   App-root 
+    // we use child component to app-component
+
+    // not to index. file   becuase index is for App-root   and app-root is for child
+
+
+
+8. Styling the Header Component & Adding An Image
+    // setting  the   Styling File ==>  inline style  ==> external style
+    // create style file
+    // 1. adding style to  style.css
+    // 2. adding style to   app.component.css
+    // 3. adding style to  header.comp.css
+    // 4. Assets folder with   logo image
