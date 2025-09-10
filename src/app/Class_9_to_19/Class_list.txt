@@ -15,3 +15,21 @@
 
 13. Outputting Dynamic Content with String Interpolation
     // add String Interpolation  for view name
+
+
+14. Property Binding & Outputting Computed Values
+    // add Property binding  we used on    tags    when the data  can be change dynamically 
+    // exept string (string can handle by  string Interpolation)
+    // add the   asset path  to anguler.json   "src/assets"
+    //"assets": [
+              "src/favicon.ico",
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+
+
+    
+    
