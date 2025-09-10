@@ -34,4 +34,9 @@
 16.  Combining the  image folder path with image using   get method inside the componet.ts file
 
 
+17. Listening to Events with Event Binding
+    adding click event on button
+
+18. 
+
     
