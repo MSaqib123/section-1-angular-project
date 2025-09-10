@@ -18,6 +18,7 @@
 
 
 14. Property Binding & Outputting Computed Values
+    //"Property Binding" - a key Angular feature that allows you to bind element properties to dynamic values.
     // add Property binding  we used on    tags    when the data  can be change dynamically 
     // exept string (string can handle by  string Interpolation)
     // add the   asset path  to anguler.json   "src/assets"
@@ -31,5 +32,4 @@
             ],
 
 
-    
     

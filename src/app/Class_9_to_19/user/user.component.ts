@@ -12,4 +12,8 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 export class UserComponent {
   //==== 12 ===
   selectUser = DUMMY_USERS[randomIndex];
+
+  get ImagePath() {
+    return 'assets/users/' + this.selectUser.avatar;
+  }
 }
