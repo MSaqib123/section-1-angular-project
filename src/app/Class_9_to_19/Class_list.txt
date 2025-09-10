@@ -13,4 +13,5 @@
 12. Storing Data in a Component Class
     1. using  dummy_user data in     user component with random index
 
-13.
+13. Outputting Dynamic Content with String Interpolation
+    // add String Interpolation  for view name

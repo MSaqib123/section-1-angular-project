@@ -10,6 +10,7 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
   styleUrl: './user.component.css',
 })
 export class UserComponent {
+  //==== 12 ===
   // selectUser = DUMMY_USERS[0];
   selectUser = DUMMY_USERS[randomIndex];
 }
