@@ -31,5 +31,7 @@
               }
             ],
 
+16.  Combining the  image folder path with image using   get method inside the componet.ts file
+
 
     
