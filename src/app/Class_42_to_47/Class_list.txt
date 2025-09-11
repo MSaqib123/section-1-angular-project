@@ -1,3 +1,14 @@
 42. Creating & Conditionally Rendering Another Component
     // the new  Component for adding the form and submittion
     // this will be conditional base
+
+43. Managing The New Task Dialog
+
+44. Using Directives & Two-Way-Binding
+
+45. Signals & Two-Way-Binding
+
+
+46. Handling Form Submission
+
+47. Using the Submitted Data
