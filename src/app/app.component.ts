@@ -117,13 +117,48 @@
 // NOte  Class_33_to_41
 //===================================
 //#region
+// //adding  HeaderComponent to app
+// import { Component } from '@angular/core';
+// import { DUMMY_USERS } from './dummy-users';
+// import { HeaderComponent } from './Class_33_to_41/header/header.component';
+// import { UserComponent } from './Class_33_to_41/user/user.component';
+// import { TasksComponent } from './Class_33_to_41/tasks/tasks.component';
+// import { CommonModule } from '@angular/common';
+
+// @Component({
+//   selector: 'app-root',
+//   imports: [HeaderComponent, UserComponent, TasksComponent, CommonModule],
+//   templateUrl: './app.component.html',
+//   styleUrl: './app.component.css',
+// })
+// export class AppComponent {
+//   users = DUMMY_USERS;
+
+//   selectedUserId!: string;
+//   onSelectUser(id: string) {
+//     this.selectedUserId = id;
+//   }
+
+//   get onSelectUserObj() {
+//     return this.users.find((x) => x.id == this.selectedUserId);
+//   }
+// }
+
+//#endregion
+
+//
+//
+//===================================
+// NOte  Class_42_to_47
+//===================================
+//#region
 //adding  HeaderComponent to app
 import { Component } from '@angular/core';
 import { DUMMY_USERS } from './dummy-users';
-import { HeaderComponent } from './Class_33_to_41/header/header.component';
-import { UserComponent } from './Class_33_to_41/user/user.component';
-import { TasksComponent } from './Class_33_to_41/tasks/tasks.component';
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './Class_42_to_47/header/header.component';
+import { UserComponent } from './Class_42_to_47/user/user.component';
+import { TasksComponent } from './Class_42_to_47/tasks/tasks.component';
 
 @Component({
   selector: 'app-root',
