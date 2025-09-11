@@ -11,9 +11,11 @@
     // the above all technic of displayin data in component is totaly wrong 
     // we need more flexible things
 
+
 22. Defining Component Inputs
     // passing INput to component
     // getting  data from  parent to Child  component
+
 
 23. Required & Optional Inputs
     // we set  required = true  to    force user to pass data to child component
@@ -23,6 +25,7 @@
     //single  input  are  set only an static  can not be change during component
     ///but  singles are  very integent as in beiging we test
 
+
 25. We Need Custom Events!
     // we need Custom Event   we  can  do it by
     
@@ -30,4 +33,11 @@
 26. Working with Outputs & Emitting Data
     // Output();    decorator
     // we need custom event so we cuse    Output decorator to   emit values in app componet
+
+
+27. Using the output() Function
+        // output is singl method  which is  much easy and good 
+
+
+
 

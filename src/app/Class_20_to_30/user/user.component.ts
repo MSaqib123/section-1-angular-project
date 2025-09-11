@@ -4,6 +4,7 @@ import {
   EventEmitter,
   input,
   Input,
+  output,
   Output,
   signal,
 } from '@angular/core';
@@ -52,12 +53,28 @@ export class UserComponent {
 
   //
   //
-  //=============== 26 Class so on ===========
+  //=============== 26 Class ===========
+  //#region
+  // @Input({ required: true }) id!: string;
+  // @Input({ required: true }) avatar!: string;
+  // @Input({ required: true }) name!: string;
+  // @Output() select = new EventEmitter();
+  // get ImagePath() {
+  //   return 'assets/users/' + this.avatar;
+  // }
+  // onSelectUser() {
+  //   this.select.emit(this.id);
+  // }
+  //#endregion
+
+  //
+  //
+  //=============== 27  singls Emit Value Class so on ===========
   //#region
   @Input({ required: true }) id!: string;
   @Input({ required: true }) avatar!: string;
   @Input({ required: true }) name!: string;
-  @Output() select = new EventEmitter();
+  select = output<string>();
   get ImagePath() {
     return 'assets/users/' + this.avatar;
   }
