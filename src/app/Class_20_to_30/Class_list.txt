@@ -39,5 +39,6 @@
         // output is singl method  which is  much easy and good 
 
 
-
+28. Adding Extra Type Information To EventEmitter
+    // adding    datatype to EventEmitter
 
