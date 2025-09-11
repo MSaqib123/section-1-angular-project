@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NewTask } from '../task.model';
+import { TasksService } from '../task.servise';
 
 @Component({
   selector: 'app-new-task',
@@ -25,12 +26,30 @@ export class NewTaskComponent {
     this.hideTaskUI.emit();
   }
 
+  //===================================
+  // =====  Injection
+  //===================================
+  // constructor(private tasksService: TasksService) {}
+  private tasksService = inject(TasksService);
+
   onSubmit() {
-    this.add.emit({
-      title: this.inputTitle,
-      summary: this.inputSummary,
-      date: this.inputDate,
-    });
+    this.tasksService.insertTask(
+      {
+        title: this.inputTitle,
+        summary: this.inputSummary,
+        date: this.inputDate,
+      },
+      this.userId
+    );
     this.hideTaskUI.emit();
   }
+
+  // onSubmit() {
+  //   this.add.emit({
+  //     title: this.inputTitle,
+  //     summary: this.inputSummary,
+  //     date: this.inputDate,
+  //   });
+  //   this.hideTaskUI.emit();
+  // }
 }
