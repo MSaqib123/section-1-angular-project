@@ -1,6 +1,7 @@
 import { Component, Input, Output } from '@angular/core';
 import { TaskComponent } from './task/task.component';
 import { NewTaskComponent } from './new-task/new-task.component';
+import { NewTask } from './task.model';
 
 @Component({
   selector: 'app-tasks',
@@ -59,5 +60,26 @@ export class TasksComponent {
 
   hideTaskUI() {
     this.isAddingTask = false;
+  }
+
+  onAddTask(taskData: NewTask) {
+    //======== with out object ======
+    //      taskData: any
+    // this.tasks.unshift({
+    //   id: new Date().getTime().toString(),
+    //   userId: this.userId,
+    //   title: taskData.title,
+    //   summary: taskData.summary,
+    //   dueDate: taskData.date,
+    // });
+
+    //======= with new-task object ========
+    this.tasks.unshift({
+      id: new Date().getTime().toString(),
+      userId: this.userId,
+      title: taskData.title,
+      summary: taskData.summary,
+      dueDate: taskData.date,
+    });
   }
 }

@@ -1,6 +1,6 @@
 @if(isAddingTask)
 {
-    <app-new-task [userId]="'u1'" (hideTaskUI)="hideTaskUI()"/>
+    <app-new-task [userId]="userId" (hideTaskUI)="hideTaskUI()" (add)="onAddTask($event)"/>
 }
 
 <section id="tasks">

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { NewTask } from '../task.model';
 
 @Component({
   selector: 'app-new-task',
@@ -12,9 +13,19 @@ export class NewTaskComponent {
   @Input({ required: true }) userId!: string;
   @Output() hideTaskUI = new EventEmitter<void>();
 
+  //========= without Object ========
+  // @Output() add = new EventEmitter<{
+  //   title: string;
+  //   summary: string;
+  //   date: string;
+  // }>();
+  //========= with newTask object ====
+  @Output() add = new EventEmitter<NewTask>();
+
+  //#region  formSubmitProp
   //==== Without Signals 2 way binding ========
   inputTitle = '';
-  inputSummery = '';
+  inputSummary = '';
   inputDate = '';
 
   //==== With Signals 2 way binding ========
@@ -23,19 +34,18 @@ export class NewTaskComponent {
   // inputDate = signal('');
   // sorry
 
+  //#endregion
+
   hideTask() {
     this.hideTaskUI.emit();
   }
 
   onSubmit() {
-    // this. (
-    //   {
-    //     title: this.inputTitle,
-    //     summery: this.inputSummery,
-    //     date: this.inputDate,
-    //   },
-    //   this.userId
-    // );
+    this.add.emit({
+      title: this.inputTitle,
+      summary: this.inputSummary,
+      date: this.inputDate,
+    });
     this.hideTaskUI.emit();
   }
 }
