@@ -1,13 +1,13 @@
 @if(isAddingTask)
 {
-    <app-new-task/>
+    <app-new-task [userId]="'u1'" (hideTaskUI)="hideTaskUI()"/>
 }
 
 <section id="tasks">
     <header>
         <h2>{{userName}}'s Tasks</h2>
         <menu>
-            <button (click)="hideTaskUI()">Add Task</button>
+            <button (click)="showAddTask()">Add Task</button>
         </menu>
     </header>
 

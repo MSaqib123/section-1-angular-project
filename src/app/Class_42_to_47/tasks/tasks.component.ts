@@ -53,7 +53,11 @@ export class TasksComponent {
     this.tasks = this.tasks.filter((t) => t.id !== completeTaskId);
   }
 
-  hideTaskUI() {
+  showAddTask() {
     this.isAddingTask = true;
+  }
+
+  hideTaskUI() {
+    this.isAddingTask = false;
   }
 }
