@@ -25,21 +25,15 @@
 
 
         <!-- ======================== -->
-        <!-- // NOte  Class_20_to_30 -->
+        <!-- // NOte  Class_33_to_41 -->
         <!-- ======================== -->
-         <li>
-            <app-user [user]="users[0]" (select)="onSelectUser($event)" />
-        </li>
-        <li>
-            <app-user [user]="users[1]" (select)="onSelectUser($event)" />
-        </li>
-        <li>
-            <app-user [user]="users[2]" (select)="onSelectUser($event)" />
-        </li>
-        <li>
-            <app-user [user]="users[3]" (select)="onSelectUser($event)" />
-        </li>
+        @for(user of users;track $index){
+            <li>
+                <app-user [user]="user" (select)="onSelectUser($event)" />
+            </li>
+        }
     </ul>
+
 
     <!-- <app-tasks [userName]="onSelectUserObj?.name"></app-tasks> -->
     @if(onSelectUserObj){
