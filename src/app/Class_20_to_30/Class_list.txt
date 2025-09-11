@@ -5,3 +5,7 @@
     Signals (Smart Jugaar):
         Signals track specific state (like selectUser) and update only the UI parts that need it.
         They’re fast, clear, and enable efficient, zoneless Angular apps.
+
+
+21. We Need More Flexible Components!
+    

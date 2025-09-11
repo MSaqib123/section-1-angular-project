@@ -13,13 +13,16 @@ export class UserComponent {
   //=============== 20. Class ========
   // Signls
   //#region
-  selectUser = signal(DUMMY_USERS[randomIndex]);
+  // selectUser = signal(DUMMY_USERS[randomIndex]);
 
-  ImagePath = computed(() => 'assets/users/' + this.selectUser().avatar);
+  // ImagePath = computed(() => 'assets/users/' + this.selectUser().avatar);
 
-  onChangeUser() {
-    const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
-    this.selectUser.set(DUMMY_USERS[randomIndex]);
-  }
+  // onChangeUser() {
+  //   const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
+  //   this.selectUser.set(DUMMY_USERS[randomIndex]);
+  // }
   //#endregion
+
+  //=============== 21. Class so on ========
+  onSelectUser() {}
 }
