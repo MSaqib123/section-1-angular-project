@@ -1,7 +1,11 @@
 <app-header />
 <main>
     <ul id="users">
-        <li>
+
+        <!-- ======================== -->
+        <!-- // NOte  Class_20_to_30 -->
+        <!-- ======================== -->
+        <!-- <li>
             <app-user [avatar]="users[0].avatar" [id]="users[0].id" [name]="users[0].name"
                 (select)="onSelectUser($event)" />
         </li>
@@ -16,8 +20,25 @@
         <li>
             <app-user [avatar]="users[3].avatar" [id]="users[3].id" [name]="users[3].name"
                 (select)="onSelectUser($event)" />
-        </li>
+        </li> -->
 
+
+
+        <!-- ======================== -->
+        <!-- // NOte  Class_20_to_30 -->
+        <!-- ======================== -->
+         <li>
+            <app-user [user]="users[0]" (select)="onSelectUser($event)" />
+        </li>
+        <li>
+            <app-user [user]="users[1]" (select)="onSelectUser($event)" />
+        </li>
+        <li>
+            <app-user [user]="users[2]" (select)="onSelectUser($event)" />
+        </li>
+        <li>
+            <app-user [user]="users[3]" (select)="onSelectUser($event)" />
+        </li>
     </ul>
 
     <!-- <app-tasks [userName]="onSelectUserObj?.name"></app-tasks> -->

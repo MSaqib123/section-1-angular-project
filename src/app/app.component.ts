@@ -43,12 +43,52 @@
 // NOte  Class_20_to_30
 //===================================
 //#region
+// //adding  HeaderComponent to app
+// import { Component } from '@angular/core';
+// import { HeaderComponent } from './Class_20_to_30/header/header.component';
+// import { UserComponent } from './Class_20_to_30/user/user.component';
+// import { DUMMY_USERS } from './dummy-users';
+// import { TasksComponent } from './Class_20_to_30/tasks/tasks.component';
+
+// @Component({
+//   selector: 'app-root',
+//   imports: [HeaderComponent, UserComponent, TasksComponent],
+//   templateUrl: './app.component.html',
+//   styleUrl: './app.component.css',
+// })
+// export class AppComponent {
+//   users = DUMMY_USERS;
+
+//   //=============== 26 Class so on ===========
+//   // onSelectUser(id: string) {
+//   //   alert(id);
+//   // }
+
+//   //=============== 29 Class ===========
+//   selectedUserId!: string;
+//   onSelectUser(id: string) {
+//     this.selectedUserId = id;
+//   }
+
+//   get onSelectUserObj() {
+//     return this.users.find((x) => x.id == this.selectedUserId);
+//   }
+// }
+
+//#endregion
+
+//
+//
+//===================================
+// NOte  Class_31_to_32
+//===================================
+//#region
 //adding  HeaderComponent to app
 import { Component } from '@angular/core';
-import { HeaderComponent } from './Class_20_to_30/header/header.component';
-import { UserComponent } from './Class_20_to_30/user/user.component';
 import { DUMMY_USERS } from './dummy-users';
-import { TasksComponent } from './Class_20_to_30/tasks/tasks.component';
+import { HeaderComponent } from './Class_31_to_32/header/header.component';
+import { UserComponent } from './Class_31_to_32/user/user.component';
+import { TasksComponent } from './Class_31_to_32/tasks/tasks.component';
 
 @Component({
   selector: 'app-root',
@@ -59,12 +99,6 @@ import { TasksComponent } from './Class_20_to_30/tasks/tasks.component';
 export class AppComponent {
   users = DUMMY_USERS;
 
-  //=============== 26 Class so on ===========
-  // onSelectUser(id: string) {
-  //   alert(id);
-  // }
-
-  //=============== 29 Class ===========
   selectedUserId!: string;
   onSelectUser(id: string) {
     this.selectedUserId = id;

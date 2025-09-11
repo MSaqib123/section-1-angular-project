@@ -1,0 +1,2 @@
+31. Accepting Objects As Inputs & Adding Appropriate Typings
+    // passing object to  component
