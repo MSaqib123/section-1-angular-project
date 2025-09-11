@@ -1,2 +1,8 @@
 31. Accepting Objects As Inputs & Adding Appropriate Typings
     // passing object to  component
+
+
+32. TypeScript Type Aliases & Interfaces
+    // using  Object   
+    // Type object     VS    Interfaces Object
+
