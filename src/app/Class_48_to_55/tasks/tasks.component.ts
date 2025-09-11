@@ -2,6 +2,7 @@ import { Component, Input, Output } from '@angular/core';
 import { TaskComponent } from './task/task.component';
 import { NewTaskComponent } from './new-task/new-task.component';
 import { NewTask } from './task.model';
+import { TasksService } from './task.servise';
 
 @Component({
   selector: 'app-tasks',
@@ -14,11 +15,33 @@ export class TasksComponent {
   @Input({ required: true }) userName!: string;
   isAddingTask = false;
 
-  get selectedUserTasks() {
-    return [{}];
-  }
+  //#region
+  // BAD ============== SingleTon injection ================
+  // this is bad logic to add directly  instance of Service or Class
+  // if in every compooent  we will used this that means  we  are creating  so many instance which is not good
+  // so the data changing will not be relatected here
 
-  CompleteTask(completeTaskId: string) {}
+  //private tasksService = new TasksService();
+
+  // GOOD
+  // for this we will used the  Dependency injaction
+
+  // NOTE 1 ====
+  // private tasksService: TasksService;
+  // constructor(tasksService: TasksService) {
+  //   this.tasksService = tasksService;
+  // }
+
+  // NOTE 2 ====
+  // Step 1
+  constructor(private tasksService: TasksService) {}
+  // Step 2
+  // add the   Injection  Decorator
+  //#endregion
+
+  get selectedUserTasks() {
+    return this.tasksService.getUserTasks(this.userId);
+  }
 
   showAddTask() {
     this.isAddingTask = true;
@@ -28,5 +51,7 @@ export class TasksComponent {
     this.isAddingTask = false;
   }
 
-  onAddTask(taskData: NewTask) {}
+  //==== this will be Handdle by service now ====
+  // CompleteTask(completeTaskId: string) {}
+  // onAddTask(taskData: NewTask) {}
 }
