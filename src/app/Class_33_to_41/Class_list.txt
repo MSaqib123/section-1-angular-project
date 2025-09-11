@@ -18,3 +18,13 @@
 
 37. Outputting User-specific Tasks
     // 
+
+
+
+38. Outputting Task Data in the Task Component
+
+39. Storing Data Models in Separate Files
+
+40. Dynamic CSS Styling with Class Bindings
+
+41. More Component Communication Deleting Tasks
