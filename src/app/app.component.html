@@ -41,7 +41,7 @@
 
     <!-- --------- Conditinal if ------------ -->
     @if(onSelectUserObj){
-        <app-tasks [userName]="onSelectUserObj.name" />
+        <app-tasks [userId]="onSelectUserObj.id" [userName]="onSelectUserObj.name" />
     }
     @else{
         <p id="fallback">Select a user to see their tasks!</p>

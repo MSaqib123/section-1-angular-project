@@ -10,3 +10,11 @@
     // in  new veriosn of anguler  we  use   @if()   and @for()  instead of  Ngif  , Ngfor
     // we use   '@angular/common'    CommonModule  import for this
     
+
+36. Adding More Components to the Demo App
+    // Adding task component
+
+
+
+37. Outputting User-specific Tasks
+    // 

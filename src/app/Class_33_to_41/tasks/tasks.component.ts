@@ -8,5 +8,6 @@ import { TaskComponent } from './task/task.component';
   styleUrl: './tasks.component.css',
 })
 export class TasksComponent {
-  @Input({ required: true }) userName?: string;
+  @Input({ required: true }) userId!: string;
+  @Input({ required: true }) userName!: string;
 }
