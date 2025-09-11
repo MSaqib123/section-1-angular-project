@@ -48,10 +48,11 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from './Class_20_to_30/header/header.component';
 import { UserComponent } from './Class_20_to_30/user/user.component';
 import { DUMMY_USERS } from './dummy-users';
+import { TasksComponent } from './Class_20_to_30/tasks/tasks.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, UserComponent],
+  imports: [HeaderComponent, UserComponent, TasksComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -59,8 +60,18 @@ export class AppComponent {
   users = DUMMY_USERS;
 
   //=============== 26 Class so on ===========
+  // onSelectUser(id: string) {
+  //   alert(id);
+  // }
+
+  //=============== 29 Class ===========
+  selectedUserId!: string;
   onSelectUser(id: string) {
-    alert(id);
+    this.selectedUserId = id;
+  }
+
+  get onSelectUserObj() {
+    return this.users.find((x) => x.id == this.selectedUserId);
   }
 }
 

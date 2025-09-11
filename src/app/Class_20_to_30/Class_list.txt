@@ -42,3 +42,8 @@
 28. Adding Extra Type Information To EventEmitter
     // adding    datatype to EventEmitter
 
+
+29. Exercise Create a Configurable Component
+    //adding  tasks   component to handle  task of users
+    // show the name on each click on user in  task component
+    // passing the  userValue to  Task
