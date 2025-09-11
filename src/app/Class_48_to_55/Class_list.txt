@@ -14,20 +14,36 @@
     // so we are adding service in this section
 
 
+//===================================
+//============= Service =============
+//===================================
+✅ Benefits of Using Services in Angular
+Separation of Concerns (Clean Code)
+Reusability
+Easy to Maintain & Test
+Dependency Injection
+Shared State / Data
+Encapsulation
+Improved Scalability
+
 ...................................
 51. Getting Started with Dependency Injection
 52. More Service Usage & Alternative Dependency Injection Mechanism
 53. Time to Practice Services
-
-// converting all manual insertion , complete , getuser  to  Service base
-........................................
-
+    // converting all manual insertion , complete , getuser  to  Service base
 
 
 54. Using localStorage for Data Storage
     //savething the data to local storage for recording the history
+........................................
 
-    
+
+
+
+
+
+
+
 
 
 
