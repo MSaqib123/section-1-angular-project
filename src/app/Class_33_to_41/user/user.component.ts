@@ -9,6 +9,7 @@ import {
   signal,
 } from '@angular/core';
 import { DUMMY_USERS } from '../../dummy-users';
+import { User } from './User.model';
 
 const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 
@@ -25,11 +26,11 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 // NOTE Advane Type_Script Type Illisass Way
 // Mostly we used  Interface object
 // ===================================
-interface User {
-  id: string;
-  avatar: string;
-  name: string;
-}
+// interface User {
+//   id: string;
+//   avatar: string;
+//   name: string;
+// }
 
 @Component({
   selector: 'app-user',
