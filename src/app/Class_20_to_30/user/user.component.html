@@ -1,6 +1,13 @@
 <div>
-    <button (click)="onSelectUser()">
+    <!-- =============== 21,22,23 Class so on =========== -->
+    <!-- <button (click)="onSelectUser()">
         <img [src]="ImagePath" [alt]="name">
         <span>{{name}}</span>
+    </button> -->
+
+    <!-- =============== 24 signal inputs =========== -->
+    <button (click)="onSelectUser()">
+        <img [src]="ImagePath()" [alt]="name()">
+        <span>{{name()}}</span>
     </button>
 </div>

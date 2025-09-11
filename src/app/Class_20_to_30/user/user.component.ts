@@ -1,4 +1,4 @@
-import { Component, computed, Input, signal } from '@angular/core';
+import { Component, computed, input, Input, signal } from '@angular/core';
 import { DUMMY_USERS } from '../../dummy-users';
 
 const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
@@ -24,11 +24,21 @@ export class UserComponent {
   //#endregion
 
   //=============== 21,22,23 Class so on ===========
-  @Input({ required: true }) avatar!: string;
-  @Input({ required: true }) name!: string;
+  //#region
+  // @Input({ required: true }) avatar!: string;
+  // @Input({ required: true }) name!: string;
 
-  get ImagePath() {
-    return 'assets/users/' + this.avatar;
-  }
+  // get ImagePath() {
+  //   return 'assets/users/' + this.avatar;
+  // }
+  // onSelectUser() {}
+  //#endregion
+
+  //=============== 24 signal inputs ===========
+  avatar = input<string>();
+  name = input<string>();
+
+  ImagePath = computed(() => 'assets/users/' + this.avatar());
+
   onSelectUser() {}
 }
