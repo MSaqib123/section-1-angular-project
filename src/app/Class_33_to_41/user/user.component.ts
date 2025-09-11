@@ -38,17 +38,6 @@ interface User {
   styleUrl: './user.component.css',
 })
 export class UserComponent {
-  //
-  //
-  //=============== 31 =============
-  //#region
-  //@Input({ required: true }) user!: {
-  //   id: string;
-  //   avatar: string;
-  //   name: string;
-  // };
-
-  //=============== 32 =============
   @Input({ required: true }) user!: User;
 
   @Output() select = new EventEmitter<string>();
