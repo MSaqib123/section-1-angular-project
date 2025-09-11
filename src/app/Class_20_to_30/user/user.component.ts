@@ -23,9 +23,9 @@ export class UserComponent {
   // }
   //#endregion
 
-  //=============== 21,22 Class so on ========
-  @Input() avatar!: string;
-  @Input() name!: string;
+  //=============== 21,22,23 Class so on ===========
+  @Input({ required: true }) avatar!: string;
+  @Input({ required: true }) name!: string;
 
   get ImagePath() {
     return 'assets/users/' + this.avatar;

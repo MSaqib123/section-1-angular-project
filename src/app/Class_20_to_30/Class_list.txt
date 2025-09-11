@@ -15,4 +15,7 @@
     // passing INput to component
     // getting  data from  parent to Child  component
 
-23. 
+23. Required & Optional Inputs
+    // we set  required = true  to    force user to pass data to child component
+
+
