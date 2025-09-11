@@ -1,0 +1,7 @@
+20. Introducing Signals
+    Zone.js (Old Jugaar):
+        Zone.js watches all async events (like clicks) and makes Angular check every component, slowing down big apps.
+        It’s like a nosy chacha checking every chai stall table when only one order changes.
+    Signals (Smart Jugaar):
+        Signals track specific state (like selectUser) and update only the UI parts that need it.
+        They’re fast, clear, and enable efficient, zoneless Angular apps.
