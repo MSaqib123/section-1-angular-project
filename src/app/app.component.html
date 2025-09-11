@@ -1,20 +1,30 @@
-<app-header/>
+<app-header />
 <main>
-  <ul id="users">
-      <li>
-          <app-user [avatar]="users[0].avatar" [id]="users[0].id" [name]="users[0].name" (select)="onSelectUser($event)"/>
-      </li>
-      <li>
-          <app-user [avatar]="users[1].avatar" [id]="users[1].id" [name]="users[1].name" (select)="onSelectUser($event)"/>
-      </li>
-      <li>
-          <app-user [avatar]="users[2].avatar" [id]="users[2].id" [name]="users[2].name" (select)="onSelectUser($event)"/>
-      </li>
-      <li>
-          <app-user [avatar]="users[3].avatar" [id]="users[3].id" [name]="users[3].name" (select)="onSelectUser($event)"/>
-      </li>
+    <ul id="users">
+        <li>
+            <app-user [avatar]="users[0].avatar" [id]="users[0].id" [name]="users[0].name"
+                (select)="onSelectUser($event)" />
+        </li>
+        <li>
+            <app-user [avatar]="users[1].avatar" [id]="users[1].id" [name]="users[1].name"
+                (select)="onSelectUser($event)" />
+        </li>
+        <li>
+            <app-user [avatar]="users[2].avatar" [id]="users[2].id" [name]="users[2].name"
+                (select)="onSelectUser($event)" />
+        </li>
+        <li>
+            <app-user [avatar]="users[3].avatar" [id]="users[3].id" [name]="users[3].name"
+                (select)="onSelectUser($event)" />
+        </li>
 
-  </ul>
-  
-  <app-tasks [userName]="onSelectUserObj?.id"></app-tasks>
+    </ul>
+
+    <!-- <app-tasks [userName]="onSelectUserObj?.name"></app-tasks> -->
+    @if(onSelectUserObj){
+        <app-tasks [userName]="onSelectUserObj.name" />
+    }
+    @else{
+        <p id="fallback">Select a user to see their tasks!</p>
+    }
 </main>
