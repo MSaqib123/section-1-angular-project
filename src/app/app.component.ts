@@ -57,6 +57,11 @@ import { DUMMY_USERS } from './dummy-users';
 })
 export class AppComponent {
   users = DUMMY_USERS;
+
+  //=============== 26 Class so on ===========
+  onSelectUser(id: string) {
+    alert(id);
+  }
 }
 
 //#endregion

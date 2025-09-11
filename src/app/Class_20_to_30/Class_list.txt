@@ -25,8 +25,9 @@
 
 25. We Need Custom Events!
     // we need Custom Event   we  can  do it by
-    // Output();    decorator
     
 
-26. 
+26. Working with Outputs & Emitting Data
+    // Output();    decorator
+    // we need custom event so we cuse    Output decorator to   emit values in app componet
 

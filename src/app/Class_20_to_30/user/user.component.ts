@@ -1,4 +1,12 @@
-import { Component, computed, input, Input, signal } from '@angular/core';
+import {
+  Component,
+  computed,
+  EventEmitter,
+  input,
+  Input,
+  Output,
+  signal,
+} from '@angular/core';
 import { DUMMY_USERS } from '../../dummy-users';
 
 const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
@@ -14,31 +22,47 @@ export class UserComponent {
   // Signls
   //#region
   // selectUser = signal(DUMMY_USERS[randomIndex]);
-
   // ImagePath = computed(() => 'assets/users/' + this.selectUser().avatar);
-
   // onChangeUser() {
   //   const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
   //   this.selectUser.set(DUMMY_USERS[randomIndex]);
   // }
   //#endregion
-
+  //
+  //
   //=============== 21,22,23 Class so on ===========
   //#region
   // @Input({ required: true }) avatar!: string;
   // @Input({ required: true }) name!: string;
-
   // get ImagePath() {
   //   return 'assets/users/' + this.avatar;
   // }
   // onSelectUser() {}
   //#endregion
 
+  //
+  //
   //=============== 24 signal inputs ===========
-  avatar = input<string>();
-  name = input<string>();
+  //#region
+  // avatar = input<string>();
+  // name = input<string>();
+  // ImagePath = computed(() => 'assets/users/' + this.avatar());
+  // onSelectUser() {}
+  //#endregion
 
-  ImagePath = computed(() => 'assets/users/' + this.avatar());
-
-  onSelectUser() {}
+  //
+  //
+  //=============== 26 Class so on ===========
+  //#region
+  @Input({ required: true }) id!: string;
+  @Input({ required: true }) avatar!: string;
+  @Input({ required: true }) name!: string;
+  @Output() select = new EventEmitter();
+  get ImagePath() {
+    return 'assets/users/' + this.avatar;
+  }
+  onSelectUser() {
+    this.select.emit(this.id);
+  }
+  //#endregion
 }
