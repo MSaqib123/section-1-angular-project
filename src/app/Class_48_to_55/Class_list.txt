@@ -13,3 +13,15 @@
     // service is used for  api request  with   CRUD operation
     // so we are adding service in this section
 
+
+...................................
+51. Getting Started with Dependency Injection
+52. More Service Usage & Alternative Dependency Injection Mechanism
+53. Time to Practice Services
+
+// converting all manual insertion , complete , getuser  to  Service base
+........................................
+
+
+
+
