@@ -1,3 +1,15 @@
-42. Creating & Conditionally Rendering Another Component
-    // the new  Component for adding the form and submittion
-    // this will be conditional base
+48. Content Projection with ng-content
+    //ng-content   to apply the element to  child elements
+    //this is basicalyl render type thing
+
+
+49. Transforming Template Data with Pipes
+    // adding Pips
+    // datePipes  for   date formates
+    // CommonModule  contian all thins   datePipes
+
+
+50. Getting Started with Services
+    // service is used for  api request  with   CRUD operation
+    // so we are adding service in this section
+
