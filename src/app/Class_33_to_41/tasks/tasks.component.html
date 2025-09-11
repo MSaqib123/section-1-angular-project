@@ -10,7 +10,9 @@
 
     <ul>
         <li>
-            <app-task [userId]="userId" [name]="userName"/>
+            @for(task of selectedUserTasks;track task){
+                <app-task [task]="task" />
+            }
         </li>
     </ul>
 
