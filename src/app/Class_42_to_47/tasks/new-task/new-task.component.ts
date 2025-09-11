@@ -12,12 +12,12 @@ export class NewTaskComponent {
   @Input({ required: true }) userId!: string;
   @Output() hideTaskUI = new EventEmitter<void>();
 
-  //==== Without Signals ========
+  //==== Without Signals 2 way binding ========
   inputTitle = '';
   inputSummery = '';
   inputDate = '';
 
-  //==== With Signals ========
+  //==== With Signals 2 way binding ========
   // inputTitle = signal('');
   // inputSummery = signal('');
   // inputDate = signal('');
