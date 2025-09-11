@@ -47,6 +47,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './Class_20_to_30/header/header.component';
 import { UserComponent } from './Class_20_to_30/user/user.component';
+import { DUMMY_USERS } from './dummy-users';
 
 @Component({
   selector: 'app-root',
@@ -54,6 +55,8 @@ import { UserComponent } from './Class_20_to_30/user/user.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {}
+export class AppComponent {
+  users = DUMMY_USERS;
+}
 
 //#endregion

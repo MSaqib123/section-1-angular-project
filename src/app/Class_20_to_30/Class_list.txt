@@ -8,4 +8,11 @@
 
 
 21. We Need More Flexible Components!
-    
+    // the above all technic of displayin data in component is totaly wrong 
+    // we need more flexible things
+
+22. Defining Component Inputs
+    // passing INput to component
+    // getting  data from  parent to Child  component
+
+23. 
