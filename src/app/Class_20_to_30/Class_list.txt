@@ -19,3 +19,14 @@
     // we set  required = true  to    force user to pass data to child component
 
 
+24. Using Signal Inputs
+    //single  input  are  set only an static  can not be change during component
+    ///but  singles are  very integent as in beiging we test
+
+25. We Need Custom Events!
+    // we need Custom Event   we  can  do it by
+    // Output();    decorator
+    
+
+26. 
+
